@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Calculator</title>
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    
+
+    <div class="main">
+
+        <div class="container">
+            <h1>Calculator</h1>
+      
+            <div class="first-row">
+              <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
+              <input type="button" value="C" onclick="clearScreen()" class="clear" />
+            </div>
+            <div class="second-row">
+              <input type="button" value="1" onclick="live(1)" id="one" />
+              <input type="button" value="2" onclick="live(2)" id="two" />
+              <input type="button" value="3" id="three" onclick="live(3)" />
+              <input type="button" value="+" id="mul" onclick="live('+')" />
+            </div>
+            <div class="third-row">
+              <input type="button" value="4" id="four" onclick="live(4)" />
+              <input type="button" value="5" id="five" onclick="live(5)" />
+              <input type="button" value="6" id="six" onclick="live(6)" />
+              <input type="button" value="-" id="mul" onclick="live('-')" />
+            </div>
+            <div class="fourth-row">
+              <input type="button" value="7" id="seven" onclick="live(7)" />
+              <input type="button" value="8" id="eight" onclick="live(8)" />
+              <input type="button" value="9" id="nine" onclick="live(9)" />
+              <input type="button" value="x" id="mul" onclick="live('*')" />
+            </div>
+            <div class="fifth-row">
+              <input type="button" value="/" onclick="live('/')" />
+      
+              <input type="button" value="0" id="zero" onclick="live(0)" />
+              <input type="button" value="." class="dot" onclick="live('.')" />
+              <input type="button" value="=" id="eq" onclick="result.value = eval(result.value)" />
+            </div>
+        
+            
+            </div>
+          </div>
+
+    </div>
+    <script src="js.js" sync defer></script>
+
+</body>
+</html>
