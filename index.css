@@ -1,0 +1,282 @@
+.main_header{
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    animation: slide 40s infinite;
+}
+
+
+.top-header{
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    box-shadow: 0 0 8px 0 black;
+    position: fixed;
+}
+
+#td1 a{
+    text-decoration: none;
+    border: 0;
+    color: transparent;
+}
+#td1 a:hover{
+    text-decoration: none;
+    border: 0;
+    color: white;
+}
+#td2 a{
+    text-decoration: none;
+    border: 0;
+    color: transparent;
+}
+#td2 a:hover{
+    text-decoration: none;
+    border: 0;
+    color: white;
+}
+
+#td3 a{
+    text-decoration: none;
+    border: 0;
+    color: transparent;
+}
+#td3 a:hover{
+    text-decoration: none;
+    border: 0;
+    color: white;
+}
+#td4 a{
+    text-decoration: none;
+    border: 0;
+    color: transparent;
+}
+#td4 a:hover{
+    text-decoration: none;
+    border: 0;
+    color: white;
+}
+
+
+
+@keyframes slide {
+    0%{
+        background-image: url("D:/Python Training/program html/Kerala Tourisum/tings/bg11.jpg");
+    }
+    20%{
+        background-image: url("D:/Python Training/program html/Kerala Tourisum/tings/bg12.jpg");
+    }
+    40%{
+        background-image: url("D:/Python Training/program html/Kerala Tourisum/tings/bg13.jpg");
+    }
+    60%{
+        background-image: url("D:/Python Training/program html/Kerala Tourisum/tings/bg14.jpg");
+    }
+    80%{
+        background-image: url("D:/Python Training/program html/Kerala Tourisum/tings/bg15.jpg");
+    }
+    90%{
+        background-image: url("D:/Python Training/program html/Kerala Tourisum/tings/bg16.jpg");
+    }
+   100%{
+        background-image: url("D:/Python Training/program html/Kerala Tourisum/images/img3.jpg");
+    }
+    
+
+}
+
+
+
+#td1{
+    width:"100%";
+    height:"473px";
+    background-image: url("images/olan2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+   
+  
+
+}
+#td2{
+    width:"100%";
+    height:"473px";
+    background-image: url("images/kumarakom-experience-kerala.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+
+}
+#td3{
+    width:"100%";
+    height:"473px";
+    background-image: url("images/Varkala_-experience-kerala.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+#td4{
+    width:"100%";
+    height:"473px";
+    background-image: url("images/1-Kalaripayattu1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+
+}
+#td11{
+    color: transparent;
+}
+#td22{
+    color: transparent;
+}
+#td33{
+    color: transparent;
+}
+#td44{
+    color: transparent;
+}
+
+
+#td11:hover{
+
+background-color:rgba(255, 0, 179, 0.5);
+color: white;
+
+}
+#td22:hover{
+    background-color:rgba(47, 0, 255, 0.5);
+    color: white;
+}
+#td33:hover{
+    background-color:rgba(255, 94, 0, .5);
+    color: white;
+}
+#td44:hover{
+    background-color:rgba(0, 255, 98, .5);
+    color: white;
+}
+.experience-kerala table{
+    margin: 0 auto;
+
+}
+#more{
+    width: auto;
+    height: 40px;
+    background-color: rgba(0, 57, 115, 1);
+    text-align: center;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 45%;
+
+}
+#more2{
+    width: auto;
+    height: 40px;
+    background-color: rgba(0, 57, 115, 1);
+    text-align: center;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 43%;
+
+}
+#th1{
+background-image: url("tings/img1.1.jpg");
+background-position: center;
+background-repeat: no-repeat;
+padding: 10px;
+}
+#th2{
+    background-image: url("tings/img1.2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#th3{
+    background-image: url("tings/img1.3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#th4{
+    background-image: url("tings/img1.4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#th5{
+    background-image: url("tings/img1.5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#th6{
+    background-image: url("tings/img1.6.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#th1 a{
+    text-decoration: none;
+    border: 0;
+}
+#th2 a{
+    text-decoration: none;
+    border: 0;
+}
+#th3 a{
+    text-decoration: none;
+    border: 0;
+}
+
+
+#th11{
+    width: 363px;
+    height: 204px;
+}
+#th12{
+    width: 363px;
+    height: 204px;
+}
+#th11{
+    width: 363px;
+    height: 204px;
+}
+#th13{
+    width: 363px;
+    height: 204px;   
+}
+#th14{
+    width: 363px;
+    height: 204px; 
+}
+#th15{
+    width: 363px;
+    height: 204px;
+}
+#content a{
+ text-decoration: none;
+ border: 0;
+}
+
+#content:hover{
+
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    opacity: .5;
+
+}
+
+#foot a{
+ text-decoration: none;
+ font-size: 18px;
+ color: #036;
+
+}
+
+#foot a:hover{
+ 
+ font-size: 20px;
+ color: red;
+ font-weight: bold;
+ 
+}

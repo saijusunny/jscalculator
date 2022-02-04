@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Kerala Tourisum</title>
+</head>
+<body >
+  
+    <!--header-->
+<div class="main_header">
+
+    <div class="top-header"><!--top navigation-->
+        <!--logo-->
+        <!--Kerala Tourisum-->
+        <div id="head-h1" style=" padding-left: 75px;">
+            <img src="images\kerala-tourism-title.png"  alt="">
+        </div>
+        
+        <div id="heder-media" style="margin-top: -70px; text-align: center;  ">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAdtJREFUWEftl11OwkAQx/9bEkIWEusN8MnypDcQTyBH4AZwA/EE1iN4AvUEwg18A5/EG9QElqYhHbNilxawH0tpiGlfmqYzs7/56MyU4cgudmQ8KIGSMlJG6H9F6MM0Tdd1L5RXlUrTIGomeRl+7/v+MPzcct1RnP7OGhpzPmBAD4CZ5fAMslMQ2dZi8bCpswU04fwZwE0G49qiDHg8F6IbNhABGjcabeb7r9onaCiSYVy3ZjOV1ijQKlW3Gna1VQi4awkxCAxEgCb1+hBEV9rWdRQZG1nzeTsfIMZGezsQC8S5A+AkraOWEGxcr3cZkZ1Fb8O+YwlxujtCnFNaGCkngeT9p195Xl+3/gI70la0hjSBAifGtVqTGYaMVqa2cTAgBbZqHxJs3eVjQl8U0D2AyzQlcDCg35RJkE4akEAmdyBZ1J7n9Qjo68y/XIF+P3vZ3TNtAaEIflpCKN39OjXREIypLpslTUo2106tRbChlABkg0juQYVdscP1nfMOAU+F0QCIXT8kSMET/8USItIitjbG0FySn3DqQZsxql8E2LVq1T5zHDnQ1zWeZEhukYGM4fumn7L7qulN5FCl8qbOWS6nLded/nVu+aOYlJEyQmWEkiKQ9P7oaugblyXLJQJcY4cAAAAASUVORK5CYII="/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAoFJREFUWEftl0FuGjEUhv83QUMLlcINSjcVrJKsCy2cILlBJycIPUHpCZrcgJyg9AQgSPewgnQTcgMiFdoUyF8ZMtIIxtgmSZUFs7Wf/fl//3v2CJ7ZJ8+MB1sgU0a2Cv13hdI/fu6TPCGZFaAEoCNEczbj2Z9yfhACZRpXmYk/yY7eve1EIVdS9qLRy+7soDR6n6+ZTrM8/vKiXxHiqy5OyGMRDEg5pCC4m/IgCqniVoDCRVWwC1SqdXkE4TfbQ1Dw6Xchd7o8fwUo3e43CXyY01pCKfn/Jm6vAGSsgERqIAYQHviTZDAsvxmGcStAqYt+HcRhZOG6P00eR4OWN3VV5z7+RjyvZPSQxgdDEVZGhfx5nAKpdq8KyGcrdRaTuuJ5wTJMrIdetXulO0hDs/gQInUROYsulm73Twmc2APxy7iYr8bNj22MqdZlDcKPFht0CMzzf1/iFiGAztCxCik/+DO/OUnc1kNzW+3iMMkDy7+K+aaVQhFTq5PbVY0DjJrqBuRuUEccYFzMae/Q2E7tJUT1lKf5BN/HhdyRbvF4Uz+hSusMHWvqkDzd6gUUUaX5+hGluvGnyey6JqvN5bwfUXYhUFD7jwOl7z/aqyMcMDTITfiM6qxNmRp0aJBGQNuL2viEjd7+xl31pbO2sqJhRiA1eZE+9foTVa57jmBdf5osrTOyM9A8fYtWoC5Ql+7tBGP0kHofg7M9Qqogsk7KUM79mV+xVSa2ylRq1OYEdh9Q6tceGOguT9Oh4h/5CakQCLAAs/26FNTi3sm2CxhTFppZIOp3BpHnSFeAISkDeuxwwvry34MLxEam3nQD1zirsndd9CHzt0Am9bYKmRT6B0NsCjRm5NvlAAAAAElFTkSuQmCC"/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAUFJREFUWEftmNFNwzAQhr/jgVfKBO0GdAO6ATBBYQOeiRBByDAGHQEmgA2ADcoGPFOJQwZUOU6ok4a4EbKlvCTx+dN/v527CD0b0jMeElAoI9UKXeshyl5ocqvnwpx37snlzY1TBjJ6DNy2WqzuZOGIM7kLAeXARd2YLd+7JBO73nJUKfRPgZQX4BnrFRgA459rxxEkgkIWRDnlXB5L6TRq7+3HBHplwdjfOUuADQCdkMnsV6NHB1qwW1DnRkd8MHUA7ZEyipeyTIq71qg9Yw5WHA0dm7oM5JvYZ0tA0RUqSb7yU2LUHpLDLk3dFEg94D/3UH0go/bT8dQfoCudsMVD10DF+Gnbh6qxpFBSyCpgdP2aOnloQx5av1FsmrJajWKuA7aZoF9tS7PhNX18d8FuyerGm1fV3+nvR0jypFBIoU8RPcwlVFLhYQAAAABJRU5ErkJggg=="/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAuZJREFUWEftWEFW01AUve8XKjProIUJJayAsALLCY6FFVhWIKwAXIF1BcQVQMdSW1dg3UEaJpAODDOt5D3PTxpObdOmJhmghz/9/793e+997/2U8MgWPTI8eAKUpkgiQ5tXtQMi7KRdzrUv4qjSr7az5/uTcWYAbXaqTQKd50q25GURHF7ve5cLAdU7tTMAp0vGzHvsnWt5Ot/DmmHofwJ0B+D5X1JWIEOCtgD2pAeM7oYRBGwSSQOgt0uAyw9IgG8lJU1nb9gPAYjskIipkwtRv0Q8iPaqZsBkExZWa05AgrYqjZo6OfPqKUDHSSwQcElqdBSek3ILgjdz2MoFaKDUyARWDWa6AGCkSOIrVodY+dFnLvcBbCWczw5IsdpzXt30Nju1/liGgQB+iiS+UqNt3K+ZrLhbGCDtm2vLMydawpgtLV3ZWVRdWr6B5R3WP9fsBOmyMSSQo2traNc7NRn/yodAcxL9QYZSoxfMz5qAvJ9iKRsgLRdWAp+ZvkYB5YNrDUND169qlyC8XuSn8L42+KxsGQEptR31F2gz6xV5A2sVZtaGTWuIYeIJhmP8WQHJLu5LlalfaLuWd7TcMKYTpX7azOXvxUmWSDmduNZty/i00WDFtq46bf4xSD00w1IvXDIAMeW6oqb7ScjUtIcmKvLOtbzKnKGdTTIAjmt52wvkcSBy5u4PP2pgeqRwwBcgmEDE4lZnvSeQl4VIFtKuZDcaGXGlJdeVkPRIqKF3CfRlYN026p3144SS10cyMzSmfW7gWXQPcy+sRN0uKoV1agja7r53UO9UWwDpGdULVGDo4ZowOgYAtUKzd6smB3QeSZe4sjEUd+o4pE6knxixX3AfDVo96+IzS748swHSZcsUbIFCbxyM6fcBsYVUTxCEXw6KSyYofBvpc2mvgVweWjQZ8uxlYyhPxpS7/yCg5WZTMZwt9aFodCuVICg3aH6pFoJGII5+Y00He/r3I43eJ4bSGPoNXaK7NKyVBIkAAAAASUVORK5CYII="/>          
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA5xJREFUWEfdWFFO20AQnbGEAzYS4QSFn8b5ajhB0xMQTtBwAuAEhBM0PUGTE5SeoOEEDV8J/cG5QZDwAo7kqca108lm13EolVD3056M375583Y2CK9s4SvDA/8HoNH2dhOJDiFJGoBYBYBGxvQQiKbgOEMHoP82iobrVqA0Q7fVajWO4xMCOAUABlFmTRGgW1Pqokwwx5QCdON5LQL4BAB7ZRNrcSECnNWUulz1+5WAxr7fBaKTVYnKvEeAziq2CgHdeF6PAD6W+VjZGATo1ZQ6tsVbAZVkZgKIIRKFCUCIiE0gYn29KwJIABd1pTqmGCOgTDNfC3bRR8SurYu4AR7j+BR/N8CO5cNHJk0tAeJkT3H8wyLga0qSVv3xMSxTojTXbHYJRO8N8WGg1L7+fAnQyPM6CHBuSHBdcd3m/nQ65XcpC7PZIRK1sjIBIoYJ4qAeRX35e6sWic6Ch4eujF0CNPY8/qBO813FdfdyMFlJvxT40ZCS5ChnMmOdTfKNbgc6SwuAUgdOku86O4R4XI+iHj9fpS/x27Diugf5Jka+30Yi3sTCchAPpBYXAFk66y5QKnXmbKe3gplvQDRAxIbJHvRuMrKP+DmIIhZ/unRAA4MAvwVKtTh4vLV1Cojs2Lzmz9N3nscufKgRMA2U2s2fGbWEeBVEUdMMyPO4zgseInc59v05YEqSfdlttmaouO7uvGymhlkBiJb0I0xMAgqUWmTXzBCQ43yo398POK8NtMylJ/0bQOxNeheB/NhzAJla/o+GxEErS/HT9xsJEZupvuYNYdVZYcmERmTm/OOjzc09dBzuslKlQIB+Tal2nsvSZQWito0aojXzbpKlkNqSG5H6sfpXUdsXmV5ujmPPC/mEl61qavkldizsFxpjVmejODPT4vmoDdquMg2xD7Go7wigK8cLzb8kiZNAqYUpdJ3DdZ4IAeajA7t37jMGUYPtyEh1KI4kozHyw4KDcP492WHsvkmSdPSRJBs9zoFofixogJfYWTo6hMXzUG8b0K4DpdJrj+w6Hk0BIJ2TiKgJPD0WLMmyDFt7hJViLSpHERgwzEHWkslEpsNQnm3PuQTo3acDX/salAMyjCKFpKQvC5gpxVAelA1u3NY7OaCCUdcEbMID/4tcFPPs+U2CTXFzY+PyKY7loGZjZ0KInXzaXE1hyau0noi7CxynvXQPQ7zKYvnPht4//bOhzO5eImalqF/iI+vkeHWAfgH70ShD44y1AwAAAABJRU5ErkJggg=="/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAcNJREFUWEftmDFSwlAURe9NoXbSKJTsQHYgdkCFK5AdyF+BuIKPK5AlYGPoxB2wA7EDK+zUItf5ODAhgjDBGJzJa8N778zN+/d9QuxYcMd4kAGteyNLFTqu2jrknaxL3ua5BwzfDoK7SddMwnW+ARUqtiHydptmm+YKOn/xTfdnoJptSbzatOg2vyN1Pbo3rX8P9AqoQ6Erog6wAeBwG2VmuTEV0s3YN81ZkXzVtgFepgZE6WzUM/0ZQKFiyyIfUgMCZMa+aYcUagK0KQJhArJFcSCqBMmdilyaQL/Re2mNuEP9SGI+QxLKAE9dB1dw1ikQigQvAD2T6ATCwBNyIkqrTmYsoGhSIWScY785d3o37AHRePGNs4WFyNVtbv8DfYgL6yhpoOKoZ4ar3m+hYosinxZcOY5Tb6pQuJFTJLo03fN8zQ7CKiWqkGt4VLMlT1OPcqdw8L6vszDYcdV2vubsKxIHiioQ3ebh+fsboGpbP81IBpTPFAKwyhinxzpTaBcUAtCXOF+upMqAW7CAxMULOqdXk3CszI3tQ4ndPeI6dfpAu/ZH0W3qvXeUvenFKsEIMBz1TCfaIfv6sU7zTKF1Cn0CaXMNQwFDhLIAAAAASUVORK5CYII="/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAnJJREFUWEftl8FqFEEQhr96AvUsYoJ40IMawbPmDaLBg3gxT2A8CCJBE0REPJg8gYKeFDX7BG7OIsklelKyB/GqT9Dy2z0yzk5P9+7MhBxSsMxhp7u/+auqq8o4YGYHjIdDoJRHshVycAE4iX9OYjvAyEDPpCWBHCwDD4Gjyd2aX/gFrBpsNL0WBXIe4ANwpSVIdfkQuGogwDFrAtLCyx3DFNsNDeazgYKbnvcEU2y7ZPCyekatQg72QgB3wbSEd49isaz4nsFsEihk03YXJMDAYEF7Of9UTJZtrpp9Ywo5H8QfM4B+4yXfNBg6mAlXgtbfAo4AOwZzAUgKVcNgXmvLZ9UBrYY0b2Ia6NBYpgS4TeA83v361WXrmoHO+2fTAJXdcAq4BJz1XuEL8Mnge1BFl6GgYtYaSG6akTIOzumi051SOe2dFDbYzYjH1kAbBsvOZ8czYDHy6W+BuwYjB+vA7ch7rYH+BqGD68CbROAvGrx3PsBf9AV0LLjrAbCWAFoxeJxwW2uFCqAV4FEC6L7Bk76BCpddAxS8TbZgMOjbZUVQnwCeAjciRK+BewY/+g5q1aTZEEenwwV6swL1SvFl8G0/0l5nl8vBceAicCZcjF+BzwY/9+tiLMTQDawmSyVhzIIySvVUu5uVZbnFVe5TcVVxHAUqlQlBqJDmWFZx1YZdtR8pqHT7EXzfZYMWg9IkopblP4t1jHXNVOprJ/3/jvk6lwYKKvXZ5G9ZZJpJjUFqsrqePLYA3eKTjUGFjqEXlrSaWtuYMnG9zk3lTZOTawlM2afhcdLBUXeWJoxuRuk2kkyzNluhaTafZs0hUEq1PxsZuyVcko54AAAAAElFTkSuQmCC"/>
+        </div>
+
+        <div class="navigation">
+            
+                <table style="float: right; margin-right: 200px; color: white; font-size: 24px;">
+
+                    <tr>
+                        
+                        <th style="border-left: 10px; padding-left: 20px;"><a href="index.html" style="text-decoration: none; color: white;"> Home</a></th>
+                        <th style="border-left: 10px; padding-left: 20px;"><a href="sign up.html" style="text-decoration: none; color: white;"> Sign Up</th></a>
+                        <th style="border-left: 10px; padding-left: 20px;" ><a href="si" style="text-decoration: none; color: white;"> Sign In</th></a>
+                    </tr>
+                </table>
+           
+        </div>
+
+        <div id="since">
+             <table style="float: right;margin-right: -100px; margin-top: -40px;">
+
+                <tr>
+                    <td style="color: white;">Visited Since</td>
+                    <td style="color: white;">1 Apr 2021 </td>
+                    <td style="color:white"> 6,182,643</td>
+                    <!--<td style="background-color:rgb(0, 0, 0); color: white;">Languages</td>-->
+
+
+                </tr>
+
+             </table>
+
+             <table style="float: right;margin-right: -450px; margin-top: -40px;">
+
+                <tr>
+                    <td style="color: white;">Visited Since</td>
+                    <td style="color: white;">1 Jan 2007</td>
+                    <td style="color: white;"> 48,076,406</td>
+                    <td style="background-color:#09C; color: white;">ENG <span style="background-color:rgb(0, 0, 0); color: white;">Languages</span></td>
+                    <!--<td style="background-color:rgb(0, 0, 0); color: white;">Languages</td>-->
+
+
+                </tr>
+
+             </table>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- ----------------------------------------------Body----------------------------------------------------------->
+<div class="mains">
+    <div style="margin-top: 20px; display: block; background-color: #e3e7f1; width: 100%; height: 230px; text-align: center;">
+
+        <img src="images\ktmbanner.jpg" alt="" style=" width: 80%; padding-top: 40px; ">
+
+    </div>
+
+
+    <div style="margin-top: 80px;">
+        <h2 style="text-align: center; font-size: 36px; font-weight: 500; color: #036; font-family: 'Montserrat', sans-serif;">Experience Kerala</h2>
+    </div>
+
+    <div class="experience-kerala">
+
+        <table>
+            <tr>
+                <td id="td1">
+                    <div style="width:273px;height: 473px; " id="td11">
+                        <a href="https://www.keralatourism.org/kerala-food/side-dishes/"><div style="padding-top :100px;">
+                            <h3 style=" text-align: center; ">Olan is a sumptuous mix of coconut milk, Ash Gourd and pumpkin that is an important part of the Sadya</h3>
+                            <h1 style=" text-align: center; ">OLAN</h1>
+                        </div></a>
+                    </div> 
+                </td>
+                <td id="td2">
+                    <div style="width: 273px;height: 473px;  "id="td22">
+
+                        <a href="https://www.keralatourism.org/destination/varkala-beach/328"><div style="padding-top :100px;">
+                            <h3 style=" text-align: center; ">Located on the banks of the Vembanad Lake in Kottayam, one gets to see a variety of migratory birds that flock in thousands, ranging from places like the Himalayas to Siberia.</h3>
+                            <h1 style=" text-align: center; ">Kumarakom Bird Sanctuary</h1>
+                        </div></a>
+
+                    </div> 
+                </td>
+                <td id="td3">
+                    <div style="width:273px;height: 473px; " id="td33">
+
+                        <a href="https://www.keralatourism.org/destination/kumarakom-bird-sanctuary/525"><div style="padding-top :100px;">
+                            <h3 style=" text-align: center; ">Varkala, a calm and quiet hamlet, lies on the outskirts of Thiruvananthapuram district.</h3>
+                            <h1 style=" text-align: center; ">Varkala</h1>
+                        </div></a>
+                    </div> 
+                </td>
+                <td id="td4">
+                    <div style="width:273px;height: 473px; "id="td44">
+                        <a href="https://www.keralatourism.org/kalaripayattu/"><div style="padding-top :100px;">
+                            <h3 style=" text-align: center; ">Kalaripayattu is an Indian martial art and fighting style that originated in modern-day Kerala. Kalaripayattu is also mentioned in the Vadakkan Pattukal ballads written about the Chekavar from the Malabar region of Kerala.</h3>
+                            <h1 style=" text-align: center; ">Kalaripayattu</h1>
+                        </div>
+                    </a>
+                    </div> 
+                </td>
+
+            </tr>
+            
+
+        </table>
+
+        <a href="https://www.keralatourism.org/specialities/" target="blank"><input type="submit" value="Find More Experience"  id="more"></a>
+
+    </div>
+
+
+    <!--Top Destinataion-->
+
+    <div style="width: 100%; height: 575px; background-color:  #e3e7f1; margin-top: 20px; padding-right: 20px;padding-left: 20px;">
+        <h1 style="text-align: center; padding-top: 50px; padding-bottom: 50px; color: #036; font-family: 'Montserrat', sans-serif;" >Top Destination</h1>
+        <table style="align-items: center; margin: 0 auto;">
+            <tr>
+
+                <td>
+                    <img src="tings/img1.jpg" alt="" width="322px" height="155px" style="vertical-align: middle;">
+                </td>
+                <td>
+                    <img src="tings/img2.jpg" alt="" width="322px" height="155px" style="vertical-align: middle;">
+                </td>
+                <td>
+                    <img src="tings/img3.jpg" alt="" width="322px" height="155px" style="vertical-align: middle;"> 
+                </td>
+                <td>
+                    <img src="tings/img4.jpg" alt="" width="322px" height="155px" style="vertical-align: middle;">
+                </td>
+
+            </tr>
+            <tr>
+
+                <td>
+                    <img src="tings/img5.jpg" alt="" width="322px" height="155px" style="vertical-align: middle;">
+                </td>
+                <td>
+                    <img src="tings/img6.jpg" alt="" width="322px" height="155px"style="vertical-align: middle;">
+                </td>
+                <td>
+                    <img src="tings/img7.jpg" alt="" width="322px" height="155px" style="vertical-align: middle;">
+                </td>
+                <td>
+                    <img src="tings/img8.jpg" alt="" width="322px" height="155px" style="vertical-align: middle;">
+                </td>
+            </tr>
+
+        </table>
+        <a href="https://www.keralatourism.org/destination/" target="b  lank"><input type="submit" value="Explore Our Destination" id="more2"></a>
+
+    </div>
+
+    <!--Things to do-->
+
+    <div style="width: 100%; height: 700px; margin-top: -50px; background-image: url('tings/bgimg.jpg');background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; padding-right: 20px;padding-left: 20px;">
+        <h1 style="text-align: center; padding-top: 50px; padding-bottom: 50px; color: #036; font-family: 'Montserrat', sans-serif;" >Top To Do In Kerala</h1>
+        <table style="margin: 0 auto; " >
+
+            <tr>
+
+                <td id="th1">
+                    <a href="Catamaran.html" target="blank"><div id="th11">
+
+                        <Div id="content">
+                            <div>
+                                <h2 style="color: white; padding-top: 20px; text-align: center; margin-top: 20px auto; padding-bottom: 20px;">Catamaran Cruise</h2>
+                            </div>
+                        </Div>
+
+                    </div></a>
+                </td>
+                <td id="th2">
+                    <a href="Festivals.html" target="blank"><div id="th12">
+                        <Div id="content">
+                            <div>
+                                <h2 style="color: white; padding-top: 20px; text-align: center; margin-top: 20px auto; padding-bottom: 20px;">Festivals</h2>
+                            </div>
+                        </Div>
+                    </div></a>
+                </td>
+                <td id="th3">
+                    <a href="Fishing.html" target="blank"><div id="th13"> 
+                        <Div id="content">
+                            <div>
+                                <h2 style="color: white; padding-top: 20px; text-align: center; margin-top: 20px auto; padding-bottom: 20px;">Fishing</h2>
+                            </div>
+                        </Div>
+                    </div></a>
+                </td>
+            
+
+            </tr>
+            <tr>
+
+                <td id="th4">
+                    <div id="th14">
+                        <Div id="content">
+                            <div>
+                                <h2 style="color: white; padding-top: 20px; text-align: center; margin-top: 20px auto; padding-bottom: 20px;">Malabar Cuisine</h2>
+                            </div>
+                        </Div>
+                    </div>
+                </td>
+
+                <td id="th5">
+                    <div id="th15">
+                        <Div id="content">
+                            <div>
+                                <h2 style="color: white; padding-top: 20px; text-align: center; margin-top: 20px auto; padding-bottom: 20px;"> Adventure Activities</h2>
+                            </div>
+                        </Div>
+                    </div>
+                </td>
+
+                <td id="th6">
+                    <div id="th16">
+                        <Div id="content">
+                            <div>
+                                <h2 style="color: white;  padding-top: 20px; text-align: center; margin-top: -100px; padding-bottom: 20px;">Yoga</h2>
+                            </div>
+                        </Div>
+                    </div>
+                </td>
+
+            </tr>
+
+        </table>
+        <a href="https://www.keralatourism.org/things-to-do-in-kerala" target="blank"><input type="submit" value="Find More Activities" id="more2"></a>   
+
+    </div>
+    <!--Footer-->
+    <div style="width: 100; height: 700px;" id="foot" >
+
+        <h1 style="text-align: center; padding-top: 50px; padding-bottom: 50px; color: #036; font-family: 'Montserrat', sans-serif;" >What's New</h1>
+        <hr>
+        <div style="background-color: transparent; width: 70%; height: 400px; margin: 0 auto;" >
+            <table style="margin: 0px auto; padding-top: 60px;">
+                <tr>
+
+                    <td>
+                        <ul>
+                            <a href="https://www.keralatourism.org/latestfromkeralatourism/gortno402022.pdf" target="blank"><li>Govt of Kerala revised COVID protocol guidelines</li></a>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                        <a href="https://www.keralatourism.org/latestfromkeralatourism/informationassistanttrainees.pdf" target="blank"> <li>Rank List - Selection to the post of Tourist<br> Information Assistant Trainees</li></a>
+                        </ul>
+                    </td>
+
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <ul>
+                        <a href="https://www.keralatourism.org/international-b2bmeets-tradefairs/" target="blank"> <li>International Trade Fairs and B2B Meets 2022</li></a>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <a href="https://www.keralatourism.org/periyar/boating-periyar.php" target="blank"><li>Boating started in Thekkady</li></a>
+                        </ul>
+                    </td>
+
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <ul>
+                            <a href="https://www.keralatourism.org/latestfromkeralatourism/docscanner_19-nov-2021_4_02_pm.pdf" target="blank"><li>Rank List - Selection to the post of DTPC, Secretaries</li></a>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <a href="https://www.keralatourism.org/service-provider-classification/" target="blank"><li>Accreditation of service providers - Online portal launched</li></a>
+                        </ul>
+                    </td>
+
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <ul>
+                            <a href="https://www.keralatourism.org/service-provider-classification/" target="blank"><li>RT Classification for Hotels and Resorts - Online <br> portal launched</li></a>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <a href="https://www.keralatourism.org/revolving-fund" target="blank"><li>Apply now for Kerala Tourism Revolving Fund<br> Scheme</li></a>
+                        </ul>
+                    </td>
+
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <ul>
+                            <a href="https://www.keralatourism.org/information-assistant-trainee-selection/page/5" target="blank"><li>Application to the post of Information Assistant <br>Trainees - Apply Online</li></a>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <a href="https://www.keralatourism.org/latestfromkeralatourism/gortno402022.pdf" target="blank"><li>Govt of Kerala revised COVID protocol guidelines</li></a>
+                        </ul>
+                    </td>
+
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

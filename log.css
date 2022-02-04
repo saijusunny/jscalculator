@@ -1,0 +1,73 @@
+h1{
+    color: red;
+}
+#usr{
+    margin-top: -50px;
+}
+p{
+    color: rgb(53, 208, 32);
+}
+#pwd{
+ 
+  background-color: transparent;
+  margin: 8px 0;
+  border-color: transparent;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: aqua;
+}
+
+#pwd:hover{
+    border-color: rgb(53, 208, 32);
+}
+
+
+body{
+    background-image: url("D:/Python Training/program html/Kerala Tourisum/tings/bg14.jpg");
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-position: center;
+}
+.maindiv{
+   
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 8% auto;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+label{
+    margin:12px ;
+}
+.signin{
+ background-color: rgb(53, 208, 32);   
+ color: rgb(0, 0, 0);
+ font-weight: bold;
+ width: 250px;
+ border-radius: 8px;
+ height: 50px;
+ border: none;
+}
+
+.signin:hover{
+    background-color: rgba(226, 6, 6, 0.8);
+    color: white;
+    font-weight: 32px;
+    width: 255px;
+    border-radius: 8px;
+    height: 55px;
+    border: none;
+}
+
+a{
+ text-decoration: none;
+ color: red;
+}
+a:hover{
+    color: rgb(53, 208, 32);
+}
